@@ -9,15 +9,6 @@ import java.net.URLConnection;
 import java.util.Scanner;
 
 public class App {
-    double temp = 0.0;
-
-    public static void main(String[] args) {
-        try {
-            tempMiasto("wroclaw");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static double tempMiasto(String miasto) throws IOException {
 
@@ -34,7 +25,5 @@ public class App {
          return temp;
 //        System.out.println("Temperatura w "+miasto+ ": "+weather.getMain().temp);
     }
-    public void setTemp(double tempJson){
-        temp =tempJson;
-    }
+
 }
